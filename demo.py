@@ -20,8 +20,8 @@ text = '知识图谱机器人'
 words = jiagu.seg(text)
 print(words)
 
-# jiagu.load_userdict('dict/user.dict') # 加载自定义字典，支持字典路径、字典列表形式。
-jiagu.load_userdict(['知识图谱'])
+jiagu.load_userdict('dict/user.dict') # 加载自定义字典，支持字典路径、字典列表形式。
+# jiagu.load_userdict(['知识图谱'])
 
 words = jiagu.seg(text)
 print(words)
@@ -34,7 +34,7 @@ NASA埃姆斯研究中心的科学家拉玛·内曼尼（Rama Nemani）说，“
 “MODIS的数据让我们能在非常小的尺度上理解这一现象，我们发现人类活动也作出了贡献。”
 NASA文章介绍，在中国为全球绿化进程做出的贡献中，有42%来源于植树造林工程，对于减少土壤侵蚀、空气污染与气候变化发挥了作用。
 据观察者网过往报道，2017年我国全国共完成造林736.2万公顷、森林抚育830.2万公顷。其中，天然林资源保护工程完成造林26万公顷，退耕还林工程完成造林91.2万公顷。京津风沙源治理工程完成造林18.5万公顷。三北及长江流域等重点防护林体系工程完成造林99.1万公顷。完成国家储备林建设任务68万公顷。
-'''				
+'''
 
 keywords = jiagu.keywords(text, 5)  # 关键词抽取
 print(keywords)
@@ -69,5 +69,5 @@ docs = [
         "自然语言处理工具包spaCy介绍",
         "现在可以快速测试一下spaCy的相关功能，我们以英文数据为例，spaCy目前主要支持英文和德文"
     ]
-cluster = jiagu.text_cluster(docs)	
+cluster = jiagu.text_cluster(docs)
 print(cluster)
